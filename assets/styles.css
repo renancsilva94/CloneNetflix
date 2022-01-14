@@ -1,0 +1,93 @@
+/* RESET */
+*{
+padding: 0;  
+margin: 0;
+box-sizing: border-box;
+}
+
+:root{
+  --vermelho: #e50914;
+  --preto: #141414;
+  --cormenu:#AAA;
+  --branco:#FFFF;
+}
+
+/* Elementos Principais da Pagina */
+body{
+  background: var(--preto);
+  color: var(--branco);
+
+}
+
+header .container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo{
+  width: 200px;
+  margin-left: 20px;
+}
+
+header nav a{
+  text-decoration: none;
+  color:var(--cormenu);
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: 'Arial' sans-serif;
+}
+
+header nav a:hover{   /*ao mouse encostar no menu*/
+  color:var(--branco);
+}
+
+
+/* Filme Principal */
+.filme-principal{
+  font-size: 18px;
+  background: linear-gradient(rgba(0,0,0,0.70),rgba(0,0,0,.50)100%), url('/img/capa_kobrakai.jpg');
+  
+  height: 550px;
+  background-size:cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 40px;
+    
+}
+
+.filme-principal .titulo{
+  margin-top: 20%;
+  font-size: 50px;
+  font-family: 'Trebuchet MS', 'Arial Black',sans-serif;
+
+}
+
+.botao{
+  background-color: rgba(0, 0, 0, .50);
+  border: none;
+  color: var(--branco);
+  padding:15px 30px;
+  margin-right: 20px;
+  font-size: 12px;
+
+  cursor: pointer;
+  transition: .5s ease all;
+}
+
+.botao:hover{
+  background-color: white;
+  color: black;
+}
+
+.botao i{
+  padding-right: 8px;
+}
+
